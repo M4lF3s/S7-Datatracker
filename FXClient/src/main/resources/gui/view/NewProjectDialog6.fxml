@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" fx:id="root" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.mfraas.fxclient.ui.controller.NewProjectDialogIndexController">
+   <children>
+      <VBox prefHeight="87.0" prefWidth="493.0">
+         <children>
+            <AnchorPane layoutX="10.0" layoutY="20.0">
+               <children>
+                  <Label layoutX="16.0" layoutY="5.0" text="Spalt A:" />
+                  <JFXTextField fx:id="zugA" focusColor="#d32f2f" layoutX="141.0" prefHeight="27.0" prefWidth="325.0" />
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </AnchorPane>
+            <AnchorPane layoutX="10.0" layoutY="57.0">
+               <children>
+                  <Label layoutX="16.0" layoutY="5.0" text="Spalt B:" />
+                  <JFXTextField fx:id="zugB" focusColor="#d32f2f" layoutX="141.0" prefHeight="27.0" prefWidth="325.0" />
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

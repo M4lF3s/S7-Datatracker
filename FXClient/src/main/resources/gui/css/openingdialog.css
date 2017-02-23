@@ -1,0 +1,15 @@
+.topPanel {
+    -fx-background-color: #9E9E9E;
+}
+
+.bottomPanel {
+    -fx-background-color: #E0E0E0;
+}
+
+JFXButton {
+    -fx-background-color: #616161;
+}
+
+JFXButton:hover {
+    -fx-text-fill: #D32F2F;
+}

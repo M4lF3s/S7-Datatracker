@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="350.0" prefWidth="895.0" stylesheets="@../css/project.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.mfraas.fxclient.ui.controller.ProjektController">
+   <children>
+      <JFXTabPane fx:id="tabPane" prefHeight="200.0" prefWidth="1031.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <tabs>
+          <Tab text="Allgemein">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <VBox layoutX="14.0" layoutY="14.0">
+                           <children>
+                              <AnchorPane>
+                                 <children>
+                                    <Label layoutY="6.0" text="Speicherort:" />
+                                    <JFXTextField fx:id="location" focusColor="#d32f2f" layoutX="97.0" prefHeight="27.0" prefWidth="380.0" />
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane layoutX="10.0" layoutY="10.0">
+                                 <children>
+                                    <JFXButton buttonType="RAISED" onAction="#selectLocation" text="Speicherort ändern..." />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </AnchorPane>
+                              <AnchorPane layoutX="10.0" layoutY="48.0">
+                                 <children>
+                                    <JFXButton buttonType="RAISED" onAction="#selectLocation" text="Projekt speichern" />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="50.0" />
+                                 </VBox.margin>
+                              </AnchorPane>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Paramter">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Accordion prefWidth="1031.0">
+                           <panes>
+                              <TitledPane animated="false" text="Materialien">
+                                 <content>
+                                    <AnchorPane>
+                                       <children>
+                                          <VBox layoutX="14.0" layoutY="14.0" spacing="10.0">
+                                             <children>
+                                                <AnchorPane>
+                                                   <children>
+                                                      <HBox spacing="10.0">
+                                                         <children>
+                                                            <Label prefHeight="26.0" prefWidth="160.0" text="Faserhalbzeug:" />
+                                                            <TextField fx:id="tfFaserhalbzeug" />
+                                                         </children>
+                                                      </HBox>
+                                                   </children>
+                                                </AnchorPane>
+                                                <AnchorPane>
+                                                   <children>
+                                                      <HBox spacing="10.0">
+                                                         <children>
+                                                            <Label prefHeight="26.0" prefWidth="160.0" text="Harzsystem:" />
+                                                            <TextField fx:id="tfHarzsystem" />
+                                                         </children>
+                                                      </HBox>
+                                                   </children>
+                                                </AnchorPane>
+                                                <AnchorPane>
+                                                   <children>
+                                                      <HBox spacing="10.0">
+                                                         <children>
+                                                            <Label prefHeight="26.0" prefWidth="160.0" text="Trägermaterial:" />
+                                                            <TextField fx:id="tfTrägermaterial" />
+                                                         </children>
+                                                      </HBox>
+                                                   </children>
+                                                </AnchorPane>
+                                                <AnchorPane layoutX="10.0" layoutY="82.0">
+                                                   <children>
+                                                      <HBox spacing="10.0">
+                                                         <children>
+                                                            <Label prefHeight="26.0" prefWidth="160.0" text="Kaschiermaterial:" />
+                                                            <TextField fx:id="tfKaschiermaterial" />
+                                                         </children>
+                                                      </HBox>
+                                                   </children>
+                                                </AnchorPane>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </TitledPane>
+                              <TitledPane animated="false" text="Anlagenparameter">
+                                 <content>
+                                    <AnchorPane>
+                                       <children>
+                                          <VBox layoutX="14.0" layoutY="14.0" spacing="10.0">
+                                             <children>
+                                                <AnchorPane>
+                                                   <children>
+                                                      <HBox spacing="10.0">
+                                                         <children>
+                                                            <Label prefHeight="26.0" prefWidth="160.0" text="Spalthöhe:" />
+                                                            <TextField fx:id="tfSpalthöhe" />
+                                                         </children>
+                                                      </HBox>
+                                                   </children>
+                                                </AnchorPane>
+                                                <AnchorPane>
+                                                   <children>
+                                                      <HBox spacing="10.0">
+                                                         <children>
+                                                            <Label prefHeight="26.0" prefWidth="160.0" text="Verfahren:" />
+                                                            <TextField fx:id="tfVerfahren" />
+                                                         </children>
+                                                      </HBox>
+                                                   </children>
+                                                </AnchorPane>
+                                                <AnchorPane>
+                                                   <children>
+                                                      <HBox spacing="10.0">
+                                                         <children>
+                                                            <Label prefHeight="26.0" prefWidth="160.0" text="Bahnverlauf:" />
+                                                            <TextField fx:id="tfBahnverlauf" />
+                                                         </children>
+                                                      </HBox>
+                                                   </children>
+                                                </AnchorPane>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </TitledPane>
+                              <TitledPane animated="false" text="Zugspannungen">
+                                 <content>
+                                    <AnchorPane>
+                                       <children>
+                                          <VBox layoutX="14.0" layoutY="14.0" spacing="10.0">
+                                             <children>
+                                                <AnchorPane layoutX="10.0" layoutY="154.0">
+                                                   <children>
+                                                      <HBox spacing="10.0">
+                                                         <children>
+                                                            <Label prefHeight="26.0" prefWidth="160.0" text="Zug Fadenspannung:" />
+                                                            <TextField fx:id="tfFadenspannung" />
+                                                         </children>
+                                                      </HBox>
+                                                   </children>
+                                                </AnchorPane>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </TitledPane>
+                              <TitledPane animated="false" layoutX="10.0" layoutY="62.0" text="Kalander">
+                                 <content>
+                                    <AnchorPane>
+                                       <children>
+                                          <VBox layoutX="14.0" layoutY="14.0" spacing="10.0">
+                                             <children>
+                                                <AnchorPane>
+                                                   <children>
+                                                      <HBox spacing="10.0">
+                                                         <children>
+                                                            <Label prefHeight="26.0" prefWidth="160.0" text="Drehmoment:" />
+                                                            <TextField fx:id="tfDrehmoment" />
+                                                         </children>
+                                                      </HBox>
+                                                   </children>
+                                                </AnchorPane>
+                                                <AnchorPane>
+                                                   <children>
+                                                      <HBox spacing="10.0">
+                                                         <children>
+                                                            <Label prefHeight="26.0" prefWidth="160.0" text="Spalt Anzeige Kalander A:" />
+                                                            <TextField fx:id="tfSpaltA" />
+                                                         </children>
+                                                      </HBox>
+                                                   </children>
+                                                </AnchorPane>
+                                                <AnchorPane layoutX="10.0" layoutY="82.0">
+                                                   <children>
+                                                      <HBox spacing="10.0">
+                                                         <children>
+                                                            <Label prefHeight="26.0" prefWidth="160.0" text="Spalt Anzeige Kalander B:" />
+                                                            <TextField fx:id="tfSpaltB" />
+                                                         </children>
+                                                      </HBox>
+                                                   </children>
+                                                </AnchorPane>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </TitledPane>
+                              <TitledPane animated="false" layoutX="10.0" layoutY="88.0" text="Zugstation">
+                                 <content>
+                                    <AnchorPane>
+                                       <children>
+                                          <VBox layoutX="14.0" layoutY="14.0" spacing="10.0">
+                                             <children>
+                                                <AnchorPane>
+                                                   <children>
+                                                      <HBox spacing="10.0">
+                                                         <children>
+                                                            <Label prefHeight="26.0" prefWidth="160.0" text="Spalt Zugstation A:" />
+                                                            <TextField fx:id="tfSpaltZugA" />
+                                                         </children>
+                                                      </HBox>
+                                                   </children>
+                                                </AnchorPane>
+                                                <AnchorPane>
+                                                   <children>
+                                                      <HBox spacing="10.0">
+                                                         <children>
+                                                            <Label prefHeight="26.0" prefWidth="160.0" text="Spalt Zugstation B:" />
+                                                            <TextField fx:id="tfSpaltZugB" />
+                                                         </children>
+                                                      </HBox>
+                                                   </children>
+                                                </AnchorPane>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </TitledPane>
+                              <TitledPane animated="false" layoutX="10.0" layoutY="140.0" text="Prepregeigenschaften">
+                                 <content>
+                                    <AnchorPane>
+                                       <children>
+                                          <VBox layoutX="14.0" layoutY="14.0" spacing="10.0">
+                                             <children>
+                                                <AnchorPane>
+                                                   <children>
+                                                      <HBox spacing="10.0">
+                                                         <children>
+                                                            <Label prefHeight="26.0" prefWidth="160.0" text="app. Flächengewicht:" />
+                                                            <TextField fx:id="tfFlächengewicht" />
+                                                         </children>
+                                                      </HBox>
+                                                   </children>
+                                                </AnchorPane>
+                                                <AnchorPane>
+                                                   <children>
+                                                      <HBox spacing="10.0">
+                                                         <children>
+                                                            <Label prefHeight="26.0" prefWidth="160.0" text="Harzgehalt:" />
+                                                            <TextField fx:id="tfHarzgehalt" />
+                                                         </children>
+                                                      </HBox>
+                                                   </children>
+                                                </AnchorPane>
+                                                <AnchorPane layoutX="10.0" layoutY="46.0">
+                                                   <children>
+                                                      <HBox spacing="10.0">
+                                                         <children>
+                                                            <Label prefHeight="26.0" prefWidth="160.0" text="Prepregbreite:" />
+                                                            <TextField fx:id="tfPrepregbreite" />
+                                                         </children>
+                                                      </HBox>
+                                                   </children>
+                                                </AnchorPane>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </TitledPane>
+                           </panes>
+                        </Accordion>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Export">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <VBox layoutX="14.0" layoutY="14.0" prefHeight="137.0" prefWidth="483.0">
+                           <children>
+                              <AnchorPane>
+                                 <children>
+                                    <Label layoutY="6.0" text="Format:" />
+                                    <MenuButton layoutX="95.0" mnemonicParsing="false" text="Auswählen">
+                                      <items>
+                                        <MenuItem mnemonicParsing="false" text="Excel .xlsx" />
+                                      </items>
+                                    </MenuButton>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane layoutX="10.0" layoutY="10.0">
+                                 <children>
+                                    <Label layoutY="6.0" text="Template:" />
+                                    <MenuButton layoutX="95.0" mnemonicParsing="false" text="Auswählen">
+                                       <items>
+                                          <MenuItem mnemonicParsing="false" text="Standard" />
+                                       </items>
+                                    </MenuButton>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </AnchorPane>
+                              <AnchorPane layoutX="10.0" layoutY="10.0">
+                                 <children>
+                                    <Label text="Alles exportieren:" />
+                                    <CheckBox disable="true" layoutX="135.0" mnemonicParsing="false" selected="true" />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </AnchorPane>
+                              <AnchorPane layoutX="10.0" layoutY="48.0">
+                                 <children>
+                                    <Button mnemonicParsing="false" text="Exportieren" />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="50.0" />
+                                 </VBox.margin>
+                              </AnchorPane>
+                           </children>
+                        </VBox>
+                     </children></AnchorPane>
+               </content>
+            </Tab>
+         </tabs>
+      </JFXTabPane>
+      <Text fill="#f2f562" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+   </children>
+</AnchorPane>

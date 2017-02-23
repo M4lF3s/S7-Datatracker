@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="root" minHeight="328.0" minWidth="493.0" prefHeight="328.0" prefWidth="493.0" styleClass="bottom" stylesheets="@../css/newprojectdialog.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.mfraas.fxclient.ui.controller.NewProjectDialogController">
+   <children>
+      <VBox minHeight="328.0" prefHeight="328.0" prefWidth="493.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="67.0" prefWidth="493.0" styleClass="top">
+               <children>
+                  <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/logo.png" />
+                     </image>
+                  </ImageView>
+                  <Text fx:id="titleText" layoutX="69.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New Project:" AnchorPane.leftAnchor="69.0" AnchorPane.topAnchor="18.79199981689453">
+                     <font>
+                        <Font name="Helvetica Neue Light" size="24.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="apIndex" prefHeight="215.0" prefWidth="200.0" styleClass="bottom" />
+            <AnchorPane prefHeight="61.0" prefWidth="493.0" styleClass="top">
+               <children>
+                  <JFXButton fx:id="nextButton" buttonType="RAISED" layoutX="420.0" layoutY="14.0" onAction="#next" prefWidth="62.0" text="Next" />
+                  <JFXButton fx:id="backButton" buttonType="RAISED" layoutX="349.0" layoutY="14.0" onAction="#back" prefWidth="62.0" text="Back" />
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
