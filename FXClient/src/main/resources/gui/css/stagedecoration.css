@@ -1,0 +1,44 @@
+.close-button {
+    -fx-background-color: transparent !important;
+    -fx-background-image: url("../img/close.png") !important;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: stretch;
+    -fx-scale-x: 35%;
+    -fx-scale-y: 40%;
+
+}
+
+.close-button:hover {
+    -fx-background-color: transparent !important;
+    -fx-background-image: url("../img/close-hover.png") !important;
+}
+
+.minimize-button {
+    -fx-background-color: transparent !important;
+    -fx-background-image: url("../img/minimize.png") !important;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: stretch;
+    -fx-scale-x: 35%;
+    -fx-scale-y: 40%;
+
+}
+
+.minimize-button:hover {
+    -fx-progress-color: transparent !important;
+    -fx-background-image: url("../img/minimize-hover.png") !important;
+}
+
+.maximize-button {
+    -fx-background-color: transparent !important;
+    -fx-background-image: url("../img/maximize.png") !important;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: stretch;
+    -fx-scale-x: 35%;
+    -fx-scale-y: 40%;
+
+}
+
+.maximize-button:hover {
+    -fx-progress-color: transparent !important;
+    -fx-background-image: url("../img/maximize-hover.png") !important;
+}

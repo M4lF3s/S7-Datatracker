@@ -1,0 +1,11 @@
+.top {
+    -fx-background-color: #9E9E9E;
+}
+
+.bottom {
+    -fx-background-color: #E0E0E0;
+}
+
+JFXButton {
+    -fx-background-color: #D32F2F;
+}

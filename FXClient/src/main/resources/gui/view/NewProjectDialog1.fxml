@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" fx:id="root" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.mfraas.fxclient.ui.controller.NewProjectDialogIndexController">
+   <children>
+      <VBox prefHeight="87.0" prefWidth="493.0">
+         <children>
+            <AnchorPane>
+               <children>
+                  <Label layoutX="16.0" layoutY="5.0" text="Protokollführer:" />
+                  <JFXTextField fx:id="protokollführer" focusColor="#d32f2f" layoutX="141.0" prefHeight="27.0" prefWidth="325.0" />
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </AnchorPane>
+            <AnchorPane layoutX="10.0" layoutY="10.0">
+               <children>
+                  <Label layoutX="16.0" layoutY="5.0" text="Speicherort:" />
+                  <JFXTextField fx:id="speicherort" focusColor="#d32f2f" layoutX="141.0" prefHeight="27.0" prefWidth="198.0" />
+                  <JFXButton buttonType="RAISED" layoutX="348.0" onAction="#select" prefHeight="27.0" prefWidth="117.0" stylesheets="@../css/openingdialog.css" text="Durchsuchen" />
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </AnchorPane>
+            <AnchorPane layoutX="10.0" layoutY="57.0">
+               <children>
+                  <Label fx:id="errorLabel" layoutX="16.0" layoutY="5.0" textFill="RED" />
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <JFXCheckBox fx:id="skip" checkedColor="#d32f2f" layoutX="4.0" prefHeight="17.0" prefWidth="273.0" text="Überspringe Projektsetup" />
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
